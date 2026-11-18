@@ -8,6 +8,8 @@
 
 ## 运行
 
+运行 `PYTHONPATH=src python -m nlp_content_policy_appeals.desk_cli` 查看人工维持或撤销的决定在当前执行回执下需要怎样处理。政策按发言日期采取当时生效版本。申诉裁决和执行回执分开记录。
+
 从项目根目录执行 `PYTHONPATH=src python -m nlp_content_policy_appeals.cli ingest fixtures/records.json` 导入样例，随后执行 `PYTHONPATH=src python -m nlp_content_policy_appeals.cli list` 查看记录。工作数据写入 `var/records.json`。业务查询使用 fixtures/business.json 中的初始资料，约定见 fixtures/business-contract.md。执行 PYTHONPATH=src python -m nlp_content_policy_appeals.cli business 可查看当前业务目录结果。
 
 样例为本地合成文本。记录包含来源、修订号和原文，当前工作区对空白做统一处理，并提供字符及英文词项切分。
