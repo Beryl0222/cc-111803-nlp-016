@@ -1,0 +1,46 @@
+{
+  "policies": [
+    {
+      "id": "P-4",
+      "effective": "2026-01-01"
+    },
+    {
+      "id": "P-5",
+      "effective": "2026-06-01"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F-1",
+      "post": "POST-8",
+      "policy": "P-4"
+    },
+    {
+      "id": "F-2",
+      "post": "POST-9",
+      "policy": "P-4"
+    }
+  ],
+  "limits": [
+    {
+      "id": "L-1",
+      "finding": "F-1",
+      "status": "active"
+    },
+    {
+      "id": "L-2",
+      "finding": "F-2",
+      "status": "active"
+    }
+  ],
+  "receipts": [
+    {
+      "limit": "L-1",
+      "status": "processing"
+    },
+    {
+      "limit": "L-2",
+      "status": "complete"
+    }
+  ]
+}

@@ -3,12 +3,18 @@
     "record_id": "post-88",
     "source": "moderation-case",
     "revision": 1,
-    "text": "你这说法太离谱了。"
+    "text": "你说“你再说一遍”是在引用我上一句吗？"
   },
   {
     "record_id": "context-88",
     "source": "appeal-context",
     "revision": 1,
-    "text": "完整对话显示该句回应对方先前对其家人的攻击。"
+    "text": "完整消息表明这句话是要求举报，前文引用了另一账号的原话。"
+  },
+  {
+    "record_id": "review-88",
+    "source": "review-note",
+    "revision": 1,
+    "text": "建议撤回 POST-8 对应限制，等待平台回执。"
   }
 ]
