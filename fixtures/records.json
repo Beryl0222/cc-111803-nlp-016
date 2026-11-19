@@ -16,5 +16,23 @@
     "source": "review-note",
     "revision": 1,
     "text": "建议撤回 POST-8 对应限制，等待平台回执。"
+  },
+  {
+    "record_id": "shot-8",
+    "source": "screenshot",
+    "revision": 1,
+    "text": "截出窗口只可见“你再说一遍”，引文标记、答复对象与举报语境全部丢失。"
+  },
+  {
+    "record_id": "post-12-note",
+    "source": "appeal-context",
+    "revision": 1,
+    "text": "POST-12 的“你再说一遍”是对 POST-10 的引用复述；归属已还原，但是否落入持续骚扰口径仍待条款侧确认。"
+  },
+  {
+    "record_id": "post-15-note",
+    "source": "appeal-context",
+    "revision": 1,
+    "text": "POST-15 发言于 5 月 21 日，初判误用 6 月 1 日才生效的 P-5，且证据串混入 POST-8 案件的截图 SHOT-8。"
   }
 ]

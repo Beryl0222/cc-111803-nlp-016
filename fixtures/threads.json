@@ -1,0 +1,91 @@
+{
+  "posts": [
+    {
+      "id": "POST-7",
+      "author": "user-a",
+      "date": "2026-05-09",
+      "reply_to": null,
+      "text": "你再说一遍，我看你敢不敢",
+      "quotes": []
+    },
+    {
+      "id": "POST-8",
+      "author": "user-b",
+      "date": "2026-05-09",
+      "reply_to": "POST-7",
+      "text": "你再说一遍——这是对方原话，我要求平台举报处理",
+      "quotes": [
+        {"post": "POST-7", "author": "user-a", "span": "你再说一遍"}
+      ]
+    },
+    {
+      "id": "POST-9",
+      "author": "user-c",
+      "date": "2026-05-09",
+      "reply_to": null,
+      "text": "你再说一遍试试，别怪我没提醒你",
+      "quotes": []
+    },
+    {
+      "id": "POST-10",
+      "author": "user-g",
+      "date": "2026-05-11",
+      "reply_to": null,
+      "text": "你再说一遍，别以为我找不到你",
+      "quotes": []
+    },
+    {
+      "id": "POST-11",
+      "author": "user-d",
+      "date": "2026-05-10",
+      "reply_to": null,
+      "text": "你再说一遍，出了这个群你等着",
+      "quotes": []
+    },
+    {
+      "id": "POST-12",
+      "author": "user-e",
+      "date": "2026-05-11",
+      "reply_to": "POST-10",
+      "text": "你再说一遍",
+      "quotes": [
+        {"post": "POST-10", "author": "user-g", "span": "你再说一遍"}
+      ]
+    },
+    {
+      "id": "POST-13",
+      "author": "user-f",
+      "date": "2026-05-12",
+      "reply_to": null,
+      "text": "你再说一遍，下次就不是口头警告了",
+      "quotes": []
+    },
+    {
+      "id": "POST-14",
+      "author": "user-h",
+      "date": "2026-05-20",
+      "reply_to": null,
+      "text": "你再说一遍试试看",
+      "quotes": []
+    },
+    {
+      "id": "POST-15",
+      "author": "user-i",
+      "date": "2026-05-21",
+      "reply_to": "POST-14",
+      "text": "你再说一遍——原话贴这里，申请平台举报",
+      "quotes": [
+        {"post": "POST-14", "author": "user-h", "span": "你再说一遍"}
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "id": "SHOT-8",
+      "post": "POST-8",
+      "revision": 1,
+      "visible_text": "你再说一遍",
+      "note": "截取窗口丢失引文标记、答复对象与举报语境"
+    }
+  ]
+}

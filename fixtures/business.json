@@ -2,45 +2,141 @@
   "policies": [
     {
       "id": "P-4",
-      "effective": "2026-01-01"
+      "effective": "2026-01-01",
+      "clauses": [
+        {"id": "P-4.2", "covers": ["施压"], "text": "对他人继续施压、威胁的发言可处置"},
+        {"id": "P-4.3", "covers": ["施压", "持续骚扰"], "text": "重复施压或持续骚扰可施加账号作用范围限制"}
+      ]
     },
     {
       "id": "P-5",
-      "effective": "2026-06-01"
+      "effective": "2026-06-01",
+      "clauses": [
+        {"id": "P-5.2", "covers": ["施压"], "text": "施压类发言的处置口径更新（不适用于生效日前发言）"},
+        {"id": "P-5.3", "covers": ["持续骚扰"], "text": "持续骚扰的作用范围与期限口径更新（不适用于生效日前发言）"}
+      ]
     }
   ],
   "findings": [
     {
       "id": "F-1",
       "post": "POST-8",
-      "policy": "P-4"
+      "date": "2026-05-09",
+      "policy": "P-4",
+      "clause": "P-4.2",
+      "behavior": "施压",
+      "evidence": ["SHOT-8"],
+      "scope": "post",
+      "note": "初判只见到截出的单句，未识别引文与举报语境"
     },
     {
       "id": "F-2",
       "post": "POST-9",
-      "policy": "P-4"
+      "date": "2026-05-09",
+      "policy": "P-4",
+      "clause": "P-4.3",
+      "behavior": "持续骚扰",
+      "evidence": ["POST-9"],
+      "scope": "account",
+      "note": "原句即对被回复人的直接施压，无引文标记"
+    },
+    {
+      "id": "F-4",
+      "post": "POST-10",
+      "date": "2026-05-11",
+      "policy": "P-4",
+      "clause": "P-4.3",
+      "behavior": "持续骚扰",
+      "evidence": ["POST-10"],
+      "scope": "account",
+      "note": "原句含线下追索暗示，引文边界需与 POST-12 分开核对"
+    },
+    {
+      "id": "F-5",
+      "post": "POST-11",
+      "date": "2026-05-10",
+      "policy": "P-4",
+      "clause": "P-4.2",
+      "behavior": "施压",
+      "evidence": ["POST-11"],
+      "scope": "post",
+      "note": "原句施压成立"
+    },
+    {
+      "id": "F-6",
+      "post": "POST-12",
+      "date": "2026-05-11",
+      "policy": "P-4",
+      "clause": "P-4.3",
+      "behavior": "施压",
+      "evidence": ["POST-12"],
+      "scope": "account",
+      "note": "初判按账号范围处置，但该句是对 POST-10 的引用复述"
+    },
+    {
+      "id": "F-7",
+      "post": "POST-13",
+      "date": "2026-05-12",
+      "policy": "P-4",
+      "clause": "P-4.2",
+      "behavior": "施压",
+      "evidence": ["POST-13"],
+      "scope": "post",
+      "note": "原句施压成立"
+    },
+    {
+      "id": "F-8",
+      "post": "POST-15",
+      "date": "2026-05-21",
+      "policy": "P-5",
+      "clause": "P-5.2",
+      "behavior": "施压",
+      "evidence": ["SHOT-8", "POST-15"],
+      "scope": "post",
+      "note": "初判误用 6 月 1 日才生效的 P-5，发言发生在 5 月 21 日"
     }
   ],
   "limits": [
     {
       "id": "L-1",
       "finding": "F-1",
+      "measure": "mute_post",
+      "scope": "post",
+      "duration_days": 7,
       "status": "active"
     },
     {
       "id": "L-2",
       "finding": "F-2",
+      "measure": "mute_account",
+      "scope": "account",
+      "duration_days": 30,
+      "status": "active"
+    },
+    {
+      "id": "L-3",
+      "basis": ["F-4", "F-5", "F-6"],
+      "measure": "mute_account",
+      "scope": "account",
+      "duration_days": 30,
+      "status": "active"
+    },
+    {
+      "id": "L-4",
+      "basis": ["F-7"],
+      "measure": "mute_post",
+      "scope": "post",
+      "duration_days": 7,
       "status": "active"
     }
   ],
   "receipts": [
-    {
-      "limit": "L-1",
-      "status": "processing"
-    },
-    {
-      "limit": "L-2",
-      "status": "complete"
-    }
+    {"limit": "L-1", "issued_for": "initial", "status": "complete", "withdrawn_scope": null, "note": "初次限制生效回执"},
+    {"limit": "L-1", "issued_for": "lift", "status": "processing", "withdrawn_scope": null, "note": "解除单处理中，尚未生效"},
+    {"limit": "L-2", "issued_for": "initial", "status": "complete", "withdrawn_scope": null, "note": "初次限制生效回执"},
+    {"limit": "L-3", "issued_for": "initial", "status": "complete", "withdrawn_scope": null, "note": "初次限制生效回执"},
+    {"limit": "L-3", "issued_for": "adjust", "status": "rejected", "withdrawn_scope": null, "note": "收窄调整被执行端拒绝，需重新发出"},
+    {"limit": "L-4", "issued_for": "initial", "status": "complete", "withdrawn_scope": null, "note": "初次限制生效回执"},
+    {"limit": "L-4", "issued_for": "lift", "status": "complete", "withdrawn_scope": "post", "note": "解除已完成，帖子作用范围限制实际撤回"}
   ]
 }

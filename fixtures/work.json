@@ -4,13 +4,120 @@
       "finding": "F-1",
       "post": "POST-8",
       "date": "2026-05-09",
-      "verified": false
+      "verified": false,
+      "attribution_resolved": true,
+      "attribution": {
+        "original_author": "user-a",
+        "quote_boundary": "POST-7 中的“你再说一遍”为引文，POST-8 作者 user-b 是引用方",
+        "reply_target": "POST-7",
+        "context": "user-b 引用对方原话并要求平台举报处理，非对被回复人继续施压"
+      },
+      "applicable": false,
+      "pending_points": [],
+      "reason": "补充对话后归属清楚：该句是引用他人措辞并发起举报，P-4.2 覆盖的施压行为不成立"
     },
     {
       "finding": "F-2",
       "post": "POST-9",
       "date": "2026-05-09",
-      "verified": true
+      "verified": true,
+      "attribution_resolved": true,
+      "attribution": {
+        "original_author": "user-c",
+        "quote_boundary": "无引文标记，整句为作者本人措辞",
+        "reply_target": null,
+        "context": "句子直接针对被回复人施压"
+      },
+      "applicable": true,
+      "pending_points": [],
+      "reason": "原句即施压，P-4.3 适用，维持"
+    },
+    {
+      "finding": "F-4",
+      "post": "POST-10",
+      "date": "2026-05-11",
+      "verified": true,
+      "attribution_resolved": true,
+      "attribution": {
+        "original_author": "user-g",
+        "quote_boundary": "无引文标记，线下追索暗示为作者本人措辞",
+        "reply_target": null,
+        "context": "POST-12 对本句的引用不改变本句性质"
+      },
+      "applicable": true,
+      "pending_points": [],
+      "reason": "持续骚扰认定成立，P-4.3 适用"
+    },
+    {
+      "finding": "F-5",
+      "post": "POST-11",
+      "date": "2026-05-10",
+      "verified": true,
+      "attribution_resolved": true,
+      "attribution": {
+        "original_author": "user-d",
+        "quote_boundary": "无引文标记",
+        "reply_target": null,
+        "context": "原句施压"
+      },
+      "applicable": true,
+      "pending_points": [],
+      "reason": "P-4.2 施压成立"
+    },
+    {
+      "finding": "F-6",
+      "post": "POST-12",
+      "date": "2026-05-11",
+      "verified": false,
+      "attribution_resolved": true,
+      "attribution": {
+        "original_author": "user-g",
+        "quote_boundary": "“你再说一遍”是对 POST-10 的引用复述，非 user-e 本人施压措辞",
+        "reply_target": "POST-10",
+        "context": "补充线程后归属明确，但引用复述是否仍落入 P-4.3 的持续骚扰口径需条款侧确认"
+      },
+      "applicable": null,
+      "pending_points": [
+        "引用他人施压原话进行复述，是否属于 P-4.3 持续骚扰行为，需条款适用侧确认",
+        "若不适用，F-6 的账号范围（account）认定同步撤回"
+      ],
+      "reason": "归属已解决但适用性未决：保留具体待核点，不影响 L-3 上 F-4/F-5 的明确处置"
+    },
+    {
+      "finding": "F-7",
+      "post": "POST-13",
+      "date": "2026-05-12",
+      "verified": false,
+      "attribution_resolved": true,
+      "attribution": {
+        "original_author": "user-f",
+        "quote_boundary": "无引文标记",
+        "reply_target": null,
+        "context": "复核认为该句属一般性争执用语，达不到 P-4.2 施压门槛"
+      },
+      "applicable": false,
+      "pending_points": [],
+      "reason": "行为不落入 P-4.2 覆盖范围，撤销"
+    },
+    {
+      "finding": "F-8",
+      "post": "POST-15",
+      "date": "2026-05-21",
+      "verified": null,
+      "attribution_resolved": true,
+      "attribution": {
+        "original_author": "user-h",
+        "quote_boundary": "POST-15 中“你再说一遍”为对 POST-14 的引文，user-i 是引用方并发起举报",
+        "reply_target": "POST-14",
+        "context": "归属与 F-1 同型：引用加举报，非本人施压"
+      },
+      "applicable": null,
+      "pending_points": [
+        "发言日 2026-05-21 早于 P-5 生效日 2026-06-01，P-5.2 不能适用，需改按当时生效的 P-4 重新定性",
+        "初判证据串中 SHOT-8 属于 POST-8 案件，与 POST-15 无关，需从证据中剔除",
+        "改按 P-4 后引用举报是否构成施压需重新判断"
+      ],
+      "reason": "归属清楚但版本适用与证据归属均未决，挂起待核"
     }
   ]
 }
